@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend para API de Películas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Frontend para API de Películas</h1>
+
+    <div>
+      <h2>Lista de Películas</h2>
+      <ul id="films"></ul>
+    </div>
+
+    <div id="form">
+      <h2>Guardar Película</h2>
+      <form id="addFilmForm">
+        <input type="hidden" id="id" />
+        <label for="title">Título:</label>
+        <input type="text" id="title" required />
+        <label for="director">Director:</label>
+        <input type="text" id="director" required />
+        <label for="genre">Género:</label>
+        <input type="text" id="genre" required />
+        <label for="plotSummary">Resumen:</label>
+        <textarea type="text" id="plotSummary"></textarea>
+        <!-- <label for="posterImage">Imágen de Cartelera:</label>
+        <input type="text" id="posterImage" /> -->
+        <label for="actors">Actores (separados por comas):</label>
+        <input type="text" id="actors" />
+        <label for="releaseDate">Fecha de Estreno:</label>
+        <input type="text" id="releaseDate" />
+        <label for="isReleased">Está Estrenada</label>
+        <input type="checkbox" id="isReleased" />
+        <button type="submit">Guardar Película</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
